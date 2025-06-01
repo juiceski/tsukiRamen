@@ -1,0 +1,205 @@
+body {
+    background-color: darkslategrey;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1,1) translateY(0);
+    }
+    10% {
+        transform: scale(1, 0.95) translateY(-5px);
+    }
+    35% {
+        transform: scale(1.2, 0.94) translateY(-5px)
+    }
+    50% {
+        transform: scale(1, 0.98) translateY(-10px)
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+.bounce {
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+.scroll {
+    animation: scroll 20s ease infinite;
+}
+
+.background {
+    background-color: white;
+}
+
+.backgroundRed {
+    background-color: #E60F00;
+}
+
+.backgroundGreen {
+    background-color: #347200;
+}
+
+.backgroundBlue {
+    background-color: #4b9cde;
+}
+
+.backgroundBlack {
+    background-color: black;
+}
+
+.noSideMargin {
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.generalImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.clampImg {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.tiled {
+    background-color: #4b9cde;
+    background-image: url("https://www.transparenttextures.com/patterns/nami.png");
+}
+
+.links {
+    background-color: #4b9cde;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Verdana, serif;
+    text-align: center;
+}
+.linksCell {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: solid 2px black;
+    border-radius: 20px; 
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 4px 4px 4px black;
+}
+.linksCell:hover {
+    transition: 0.6s;
+    background-color: #4087c0;
+}
+
+.divider {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    font-size: 20px;
+}
+.dividerLeft {
+    background-color: lightslategray;
+    padding-right: 0px;
+    width: 50%;
+    float: left;
+}
+.dividerRight {
+    background-color: white;
+    width: 50%;
+    float: right;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.baskerville {
+    font-family: Baskerville, serif;
+}
+
+.verdana {
+    font-family: Verdana, serif;
+}
+
+.border {
+    border: solid 2px black;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.white {
+    color: white;
+}
+
+.blue {
+    color: #4b9cde;
+}
+
+.padding {
+    padding: 5px;
+}
+
+.paddingThick {
+    padding: 15px;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(3, 15vw);
+    grid-gap: 15px;
+    padding-bottom: 50px;
+}
+
+.gridImg {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.gridImg:hover {
+    transition: 0.7s;
+    width: 100%;
+    height: 100%;
+}
+
+.inlineBlock {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.vertTop {
+    vertical-align: top;
+}

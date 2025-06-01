@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tsuki Ramen | Contact</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/blocks.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/baskerville.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana">
+    </head>
+    <body>
+        <div class="wrapper tiled">
+            <img src="img/banner.jpg" class="generalImg">
+            <div class="links">
+                <a class="linksCell" href="index.html"><b>Home</b></a>
+                <a class="linksCell" href="menu.html"><b>Menu</b></a>
+                <a class="linksCell" href="gallery.html"><b>Gallery</b></a>
+                <a class="linksCell" href="contact.html"><b>Contact</b></a>
+                <a class="linksCell" href="references.html"><b>References</b></a>
+            </div>
+            
+            <div class="tiled white padding alignCenter">
+                <h1 class="baskerville">Contact</h1>
+            </div>
+
+            <div class="divider white verdana">
+                <div class="ib i2 alignCenter floatLeft">
+                    <h3 class="baskerville">Contact Information</h3>
+                    <p>Owner's Name: Sebastian Majewski<br>
+                    Restaurant Address: 1680 Richmond St North London ON N6G 3Y9<br>
+                    Phone Number: 519 000 1000<br>
+                    Email Address: tsukiramen@gmail.com</p>
+                </div>
+
+                <div class="ib i2 alignCenter floatRight">
+                    <h3 class="baskerville">Inquiry Form</h3>
+                    <form class="alignLeft">
+                        <fieldset>
+                            <legend class="alignCenter">Contact Info</legend>
+                            <label for="name">Name:</label><br>
+                            <input type="text" id="name" name="name" placeholder="First Last"required><br><br>
+
+                            <label for="email">Email Address:</label><br>
+                            <input type="email" id="email" name="email" placeholder="email@address" required><br><br>
+
+                            <label for="phone">Phone Number:</label><br>
+                            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="alignCenter">Type of Inquiry</legend>
+                            <input type="checkbox" id="question" name="radio">
+                            <label for="question">Question</label><br>
+
+                            <input type="checkbox" id="complaint" name="radio">
+                            <label for="complaint">Complaint</label><br>
+
+                            <input type="checkbox" id="suggestion" name="radio">
+                            <label for="suggestion">Suggestion</label><br>
+                        </fieldset>
+
+                        <fieldset class="alignCenter">
+                            <legend>Rate Your Satisfaction (1-5)</legend>
+
+                            <input type="radio" id="1" name="rating" required>
+                            <label for="1">1</label>
+
+                            <input type="radio" id="2" name="rating" required>
+                            <label for="2">2</label>
+
+                            <input type="radio" id="3" name="rating" required>
+                            <label for="3">3</label>
+
+                            <input type="radio" id="4" name="rating" required>
+                            <label for="4">4</label>
+
+                            <input type="radio" id="5" name="rating" required>
+                            <label for="5">5</label>
+                        </fieldset>
+
+                        <input type="submit" value="Submit">
+                        <input type="reset">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+        
